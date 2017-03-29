@@ -1,5 +1,6 @@
 <% if notice %>
-  <p><%= notice %></p> 
+  <p><%= notice %></p>
 <% end %>
 
 Order Status: <%= @order.status %>
+<h3>Order total: <%= number_to_currency(to_currency(@order.total)) %></h3>
